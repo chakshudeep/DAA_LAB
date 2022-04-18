@@ -22,6 +22,9 @@ void merge(int arr[],int lb,int mid,int ub){
 
     while(index1<len1)arr[k++]=first[index1++];
     while(index2<len2)arr[k++]=second[index2++];
+    //deleting the memory
+    delete []first;
+    delete []second;
 }
 
 void mergeSort(int arr[],int lb,int ub){
